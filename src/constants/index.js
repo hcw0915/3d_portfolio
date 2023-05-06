@@ -4,30 +4,29 @@
 */
 
 import {
-  mobile,
-  backend,
-  creator,
-  web,
   javascript,
-  typescript,
   html,
   css,
   reactjs,
   redux,
   tailwind,
-  nodejs,
-  mongodb,
   git,
   figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
   carrent,
   jobit,
   tripguide,
   threejs,
+  bootstrap5,
+  styledComponents,
+  MaterialUI,
+  scss,
+  zustand,
+  books,
+  short,
+  dataStructure,
+  army6,
+  ndu,
+  coreslink,
 } from '../assets'
 
 export const navLinks = [
@@ -47,20 +46,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: 'Web Developer',
-    icon: web,
+    title: '短期目標',
+    icon: short,
+    description: 'Javascript 與 React 原理熟稔了解',
   },
   {
-    title: 'React Native Developer',
-    icon: mobile,
+    title: '中期目標',
+    icon: books,
+    description: '接觸更多不同第三方庫並可以依需求活用',
   },
   {
-    title: 'Backend Developer',
-    icon: backend,
-  },
-  {
-    title: 'Content Creator',
-    icon: creator,
+    title: '長期目標',
+    icon: dataStructure,
+    description: '演算法 與 資料結構 基礎加強並熟悉',
   },
 ]
 
@@ -78,11 +76,7 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: 'TypeScript',
-    icon: typescript,
-  },
-  {
-    name: 'React JS',
+    name: 'React',
     icon: reactjs,
   },
   {
@@ -90,20 +84,32 @@ const technologies = [
     icon: redux,
   },
   {
-    name: 'Tailwind CSS',
-    icon: tailwind,
-  },
-  {
-    name: 'Node JS',
-    icon: nodejs,
-  },
-  {
-    name: 'MongoDB',
-    icon: mongodb,
+    name: 'Zustand',
+    icon: zustand,
   },
   {
     name: 'Three JS',
     icon: threejs,
+  },
+  {
+    name: 'Bootstrap 5',
+    icon: bootstrap5,
+  },
+  {
+    name: 'Material UI',
+    icon: MaterialUI,
+  },
+  {
+    name: 'Tailwind CSS',
+    icon: tailwind,
+  },
+  {
+    name: 'styled-components',
+    icon: styledComponents,
+  },
+  {
+    name: 'SCSS',
+    icon: scss,
   },
   {
     name: 'git',
@@ -113,63 +119,57 @@ const technologies = [
     name: 'figma',
     icon: figma,
   },
-  {
-    name: 'docker',
-    icon: docker,
-  },
 ]
 
 const experiences = [
   {
-    title: 'React.js Developer',
-    company_name: 'Starbucks',
-    icon: starbucks,
+    title: '學生',
+    company_name: '國防大學理工學院',
+    icon: ndu,
     iconBg: '#383E56',
-    date: 'March 2020 - April 2021',
+    date: '2011.07 - 2015.07',
     points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
+      '擔任學生幹部，週期性負責全隊120人秩序管理。',
+      '擔任系學會幹部，負責統籌與活動規劃。',
     ],
   },
   {
-    title: 'React Native Developer',
-    company_name: 'Tesla',
-    icon: tesla,
-    iconBg: '#E6DEDD',
-    date: 'Jan 2021 - Feb 2022',
+    title: '代理連長、副連長、排長(主管職)',
+    company_name: '國防部陸軍六軍團三三化學兵群',
+    icon: army6,
+    iconBg: '#e9e9e9',
+    date: '2015.07 - 2019.02',
     points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
+      '常態管理單位人員約40-50名。',
+      '負責「裝備後勤管理」及「人員訓練」。',
+      '規劃規範與建立標準程序。',
+      '引導演習各項事宜。',
     ],
   },
   {
-    title: 'Web Developer',
-    company_name: 'Shopify',
-    icon: shopify,
+    title: '群訓練官、營訓練官(幕僚職)',
+    company_name: '國防部陸軍六軍團三三化學兵群',
+    icon: army6,
+    iconBg: '#e9e9e9',
+    date: '2015.07 - 2022.02',
+    points: [
+      '負責訓練相關計畫制(修)定',
+      '提供訓練指導及掌握人員訓練狀況',
+      '提供上級主管部隊訓練指導建議參考',
+      '曾與政府單位(衛生福利部、行政院原能會)共同辦理新冠疫情消毒、北部核安演習事宜。',
+    ],
+  },
+  {
+    title: '前端工程師(React)',
+    company_name: '合凌科技 CoresLink',
+    icon: coreslink,
     iconBg: '#383E56',
-    date: 'Jan 2022 - Jan 2023',
+    date: '2022.12 -',
     points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
-    ],
-  },
-  {
-    title: 'Full stack Developer',
-    company_name: 'Meta',
-    icon: meta,
-    iconBg: '#E6DEDD',
-    date: 'Jan 2023 - Present',
-    points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
+      '負責公司自動化產品前端維護與部分功能開發(React beautiful dnd, React Hook Form...)。',
+      '負責開發三維坐標可視化呈現(海底地形探測數據)。',
+      '負責公司軟體版本控制規劃。',
+      '負責公司新版軟體使用手冊撰寫。',
     ],
   },
 ]

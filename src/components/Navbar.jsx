@@ -2,9 +2,13 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { styles } from '../styles'
 import { navLinks } from '../constants'
-import { logo, menu, close } from '../assets'
+import { hcw, menu, close } from '../assets'
+import { useTranslation } from 'react-i18next'
 
 const Navbar = () => {
+  // {t("")}
+  const { t } = useTranslation()
+
   const [active, setActive] = useState('')
   const [toggle, setToggle] = useState(true)
   return (
@@ -20,10 +24,12 @@ const Navbar = () => {
             window.scrollTo(0, 0)
           }}
         >
-          <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
+          <img src={hcw} alt="logo" className="w-9 h-9 object-contain" />
           <p className="text-white text-[18px] font-bold cursor-pointer flex">
-            Antonio &nbsp;
-            <span className="sm:block hidden">|&nbsp; React Developer </span>
+            {t('HCW')} &nbsp;
+            <span className="sm:block hidden">
+              |&nbsp; {t('Front-End Engineer')}{' '}
+            </span>
           </p>
         </Link>
         {/* <p className="text-red-500"> asdas</p> */}
@@ -37,7 +43,7 @@ const Navbar = () => {
                 } hover:text-white text-[18px] font-medium cursor-pointer`}
                 onClick={() => setActive(link.title)}
               >
-                <a href={`#${link.id}`}>{link.title}</a>
+                <a href={`#${link.id}`}>{t(link.title)}</a>
               </li>
             )
           })}
@@ -56,7 +62,6 @@ const Navbar = () => {
           >
             <ul className="list-none flex justiy-end items-start flex-col gap-4">
               {navLinks.map((link) => {
-                console.log(`#${link.id}`)
                 return (
                   <li
                     key={link.id}
@@ -68,7 +73,7 @@ const Navbar = () => {
                       setActive(link.title)
                     }}
                   >
-                    <a href={`#${link.id}`}>{link.title}</a>
+                    <a href={`#${link.id}`}>{t(link.title)}</a>
                   </li>
                 )
               })}

@@ -1,9 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { styles } from '../styles'
 import { ComputersCanvas } from './canvas'
+import { useTranslation } from 'react-i18next'
+import i18n from '../i18n'
 
 const Hero = () => {
+  const { t } = useTranslation()
+
+  // useEffect(() => {
+  //   const lng = navigator.language
+  //   i18n.changeLanguage(lng)
+  // }, [])
+
   return (
     <>
       <section className="relative w-full h-screen mx-auto">
@@ -17,11 +26,13 @@ const Hero = () => {
 
           <div>
             <h1 className={`${styles.heroHeadText} text-white`}>
-              Hi, I'm &nbsp;
-              <span className="text-[#915eff]">Antonio</span>
+              {t("Hi, I'm")} &nbsp;
+              <span className="text-[#915eff]">{t('Antonio')}.</span>
             </h1>
             <p className={`${styles.heroSubText} text-white`}>
-              I develop 3D visuals, user interface and web applictions.
+              {t(
+                'I am a frontend engineer, specializing in the React framework!'
+              )}
             </p>
           </div>
         </div>

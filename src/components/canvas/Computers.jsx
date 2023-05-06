@@ -3,7 +3,7 @@
 import React, { Suspense, useEffect, useState } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls, Preload, useGLTF } from '@react-three/drei'
-
+import { Wei } from '../../assets/models/model'
 import CanvasLoader from '../CanvasLoader'
 
 const Computers = ({ isMobile }) => {
@@ -36,7 +36,7 @@ const ComputersCanvas = () => {
 
   useEffect(() => {
     // Add a listener for changes to the screen size
-    const mediaQuery = window.matchMedia('(max-width: 500px)')
+    const mediaQuery = window.matchMedia('(max-width: 820px)')
 
     // Set the initial value of the `isMobile` state variable
     setIsMobile(mediaQuery.matches)
@@ -69,6 +69,16 @@ const ComputersCanvas = () => {
           minPolarAngle={Math.PI / 2}
         />
         <Computers isMobile={isMobile} />
+        <spotLight
+          position={[-20, 50, 10]}
+          angle={0.12}
+          penumbra={1}
+          intensity={1}
+          castShadow
+          shadow-mapSize={1024}
+        />
+        <ambientLight />
+        {/* <Wei isMobile={isMobile} /> */}
       </Suspense>
       <Preload all />
     </Canvas>
