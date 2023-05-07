@@ -1,16 +1,24 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/no-unknown-property */
-import React, { Suspense, useEffect, useState } from 'react'
-import { Canvas } from '@react-three/fiber'
+import React, { Suspense, useEffect, useState, useRef } from 'react'
+import { Canvas, useFrame } from '@react-three/fiber'
 import { OrbitControls, Preload, useGLTF } from '@react-three/drei'
 import { Wei } from '../../assets/models/model'
 import CanvasLoader from '../CanvasLoader'
+import { BoxGeometry, MeshStandardMaterial } from 'three'
 
 const Computers = ({ isMobile }) => {
   const computer = useGLTF('./desktop_pc/scene.gltf')
 
+  const ref = useRef()
+
+  useFrame((state, delta) => {
+    ref.current.rotation.y -= delta / 15
+  })
+  console.log('ref', ref)
+
   return (
-    <mesh>
+    <mesh ref={ref}>
       <hemisphereLight intensity={0.15} groundColor="black" />
       <spotLight
         position={[-20, 50, 10]}
@@ -57,7 +65,7 @@ const ComputersCanvas = () => {
 
   return (
     <Canvas
-      frameloop="demand"
+      // frameloop="demand"
       shadows
       camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}

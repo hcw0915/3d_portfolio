@@ -15,17 +15,15 @@ const StarsSky = (props) => {
   })
 
   return (
-    <group>
-      <Points ref={ref} positions={sphere} stride={3} frustumCulled {...props}>
-        <PointMaterial
-          transparent
-          color="#f373c8"
-          size={0.002}
-          sizeAttenuation={true}
-          depthWrite={false}
-        />
-      </Points>
-    </group>
+    <Points ref={ref} positions={sphere} stride={3} frustumCulled {...props}>
+      <PointMaterial
+        transparent
+        color="#f373c8"
+        size={0.002}
+        sizeAttenuation={true}
+        depthWrite={false}
+      />
+    </Points>
   )
 }
 
