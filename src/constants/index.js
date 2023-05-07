@@ -63,58 +63,58 @@ const services = [
 ]
 
 const technologies = [
-  {
-    name: 'HTML 5',
-    icon: html,
-  },
-  {
-    name: 'CSS 3',
-    icon: css,
-  },
-  {
-    name: 'JavaScript',
-    icon: javascript,
-  },
-  {
-    name: 'React',
-    icon: reactjs,
-  },
-  {
-    name: 'Redux Toolkit',
-    icon: redux,
-  },
-  {
-    name: 'Zustand',
-    icon: zustand,
-  },
-  {
-    name: 'Three JS',
-    icon: threejs,
-  },
-  {
-    name: 'Bootstrap 5',
-    icon: bootstrap5,
-  },
-  {
-    name: 'Material UI',
-    icon: MaterialUI,
-  },
-  {
-    name: 'Tailwind CSS',
-    icon: tailwind,
-  },
-  {
-    name: 'styled-components',
-    icon: styledComponents,
-  },
-  {
-    name: 'SCSS',
-    icon: scss,
-  },
-  {
-    name: 'git',
-    icon: git,
-  },
+  // {
+  //   name: 'HTML 5',
+  //   icon: html,
+  // },
+  // {
+  //   name: 'CSS 3',
+  //   icon: css,
+  // },
+  // {
+  //   name: 'JavaScript',
+  //   icon: javascript,
+  // },
+  // {
+  //   name: 'React',
+  //   icon: reactjs,
+  // },
+  // {
+  //   name: 'Redux Toolkit',
+  //   icon: redux,
+  // },
+  // {
+  //   name: 'Zustand',
+  //   icon: zustand,
+  // },
+  // {
+  //   name: 'Three JS',
+  //   icon: threejs,
+  // },
+  // {
+  //   name: 'Bootstrap 5',
+  //   icon: bootstrap5,
+  // },
+  // {
+  //   name: 'Material UI',
+  //   icon: MaterialUI,
+  // },
+  // {
+  //   name: 'Tailwind CSS',
+  //   icon: tailwind,
+  // },
+  // {
+  //   name: 'styled-components',
+  //   icon: styledComponents,
+  // },
+  // {
+  //   name: 'SCSS',
+  //   icon: scss,
+  // },
+  // {
+  //   name: 'git',
+  //   icon: git,
+  // },
   // {
   //   name: 'figma',
   //   icon: figma,

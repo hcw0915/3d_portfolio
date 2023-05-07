@@ -68,7 +68,7 @@ const ComputersCanvas = () => {
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
-        <Computers isMobile={isMobile} />
+        {/* <Computers isMobile={isMobile} /> */}
         <spotLight
           position={[-20, 50, 10]}
           angle={0.12}
@@ -78,7 +78,7 @@ const ComputersCanvas = () => {
           shadow-mapSize={1024}
         />
         <ambientLight />
-        {/* <Wei isMobile={isMobile} /> */}
+        <Wei isMobile={isMobile} />
       </Suspense>
       <Preload all />
     </Canvas>
