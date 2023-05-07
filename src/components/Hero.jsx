@@ -15,7 +15,7 @@ const Hero = () => {
 
   return (
     <>
-      <section className="relative w-full h-screen mx-auto bg-white">
+      <section className="relative w-full h-screen mx-auto">
         <div
           className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}
         >
@@ -25,18 +25,25 @@ const Hero = () => {
           </div>
 
           <div>
-            <h1 className={`${styles.heroHeadText} text-black`}>
-              {t('Front-End React')} &nbsp;
-              {/* <span className="text-[#915eff]">{t('Antonio')}.</span> */}
+            <h1 className={`${styles.heroHeadText}`}>
+              <span className="text-[#915eff]">
+                {t('Front-End React')}. &nbsp;
+                <hr />
+              </span>
             </h1>
-            <p className={`${styles.heroSubText}  text-black`}>
+            <br />
+            <p className={`${styles.heroSubText}  text-white`}>
               {t(
                 'Hi, I am a Antonio Hou, A Front-end React Developer based in Taiwan.'
               )}
             </p>
+            <br />
+            <br />
+            <br />
+            <div className={`${styles.heroSubText}  text-white`}>Skills</div>
+            <div>React</div>
           </div>
         </div>
-
         <ComputersCanvas />
 
         <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">

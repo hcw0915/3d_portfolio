@@ -21,7 +21,7 @@ export function Wei(props) {
       {...props}
       ref={ref}
       dispose={null}
-      scale={props.isMobile ? 2 : 3.5}
+      scale={props.isMobile ? 2 : 2.7}
       position={props.isMobile ? [0, -3.1, 0] : [1.8, -3.25, -3]}
       rotation={[0, Math.PI / 3, 0]}
     >
