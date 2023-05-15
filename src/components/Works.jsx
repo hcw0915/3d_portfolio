@@ -4,10 +4,11 @@ import { Tilt } from 'react-tilt'
 import { motion } from 'framer-motion'
 
 import { styles } from '../styles'
-import { github } from '../assets'
+import { github, website } from '../assets'
 import { SectionWrapper } from '../hoc'
 import { projects } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion'
+import Tooltip from '@mui/material/Tooltip'
 
 const ProjectCard = ({
   index,
@@ -15,6 +16,7 @@ const ProjectCard = ({
   description,
   tags,
   image,
+  website_link,
   source_code_link,
 }) => {
   return (
@@ -35,30 +37,42 @@ const ProjectCard = ({
           />
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
             <div
-              onClick={() => window.open(source_code_link, '_blank')}
+              onClick={() => window.open(website_link, '_blank')}
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
             >
-              <img
-                src={github}
-                alt="github"
-                className="w-1/2 h-1/2 object-contain"
-              />
+              <Tooltip title="Website" placement="top">
+                <img
+                  src={website}
+                  alt="github"
+                  className="bg-white w-1/2 h-1/2 object-cover"
+                />
+              </Tooltip>
             </div>
             <div
               onClick={() => window.open(source_code_link, '_blank')}
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
             >
-              <img
-                src={github}
-                alt="github"
-                className="w-1/2 h-1/2 object-contain"
-              />
+              <Tooltip title="Source Code" placement="top">
+                <img
+                  src={github}
+                  alt="github"
+                  className="w-1/1 h-1/1 object-contain"
+                />
+              </Tooltip>
             </div>
           </div>
         </div>
 
         <div className="mt-5">
-          <h3 className="text-white font-bold text-[24px]">{name}</h3>
+          <a href={website_link} type="_blank">
+            <h3 className="text-white font-bold text-[24px]">
+              {name}
+              <span className="mt-2 text-secondary text-[14px]">
+                {' '}
+                - 可連結{' '}
+              </span>
+            </h3>
+          </a>
           <p className="mt-2 text-secondary text-[14px]">{description}</p>
         </div>
 

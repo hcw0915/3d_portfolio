@@ -203,37 +203,48 @@ const testimonials = [
 
 const projects = [
   {
-    name: 'Car Rent',
+    name: 'HCW | 前端工程師',
     description:
-      'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
+      '利用 React 框架所製作的 個人作品集網站，主要提供個人近期作品展示，並使用 Three.js, Email.js, i18n等等, 以及其他動畫庫製作。',
+    // 'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
     tags: [
       {
-        name: 'react',
+        name: 'React',
         color: 'blue-text-gradient',
       },
       {
-        name: 'mongodb',
+        name: 'Three.js in React',
         color: 'green-text-gradient',
       },
       {
-        name: 'tailwind',
+        name: 'Tailwind',
         color: 'pink-text-gradient',
+      },
+      {
+        name: 'Email.js',
+        color: 'white',
+      },
+      {
+        name: 'Other animation libs',
+        color: 'orange-text-gradient',
       },
     ],
     image: carrent,
+    website_link: 'https://3d-portfolio-lake.vercel.app/',
     source_code_link: 'https://github.com/',
   },
   {
-    name: 'Job IT',
+    name: 'HCW | 部落格',
     description:
-      'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
+      '以 Docusaurus 為主要框架的筆記網站，主要記述了過去個人筆記檔案，以及套件學習進度，持續保持個人筆記學習習慣，與瀏覽者彼此教學相長。',
+    // 'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
     tags: [
       {
-        name: 'react',
+        name: 'React',
         color: 'blue-text-gradient',
       },
       {
-        name: 'restapi',
+        name: 'Docusaurus',
         color: 'green-text-gradient',
       },
       {
@@ -242,12 +253,14 @@ const projects = [
       },
     ],
     image: jobit,
+    website_link: 'https://hcwblog.vercel.app/',
     source_code_link: 'https://github.com/',
   },
   {
-    name: 'Trip Guide',
+    name: '3D 跑車',
     description:
-      'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
+      '第一個復刻網路YT 3D作品內容，本專案除了學習 Three.js 基礎API以外，尚針對WebGL知識有基礎認識，像是 .glb .gtlf 等等模型檔案，以及對 3D模型軟體有基礎認識。',
+    // 'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
     tags: [
       {
         name: 'nextjs',
@@ -263,6 +276,7 @@ const projects = [
       },
     ],
     image: tripguide,
+    website_link: 'https://car-react-three.vercel.app/',
     source_code_link: 'https://github.com/',
   },
 ]

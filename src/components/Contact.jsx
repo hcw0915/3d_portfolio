@@ -5,6 +5,7 @@ import { styles } from '../styles'
 import { EarthCanvas } from './canvas'
 import { SectionWrapper } from '../hoc'
 import { slideIn } from '../utils/motion'
+import { Toaster, toast } from 'react-hot-toast'
 
 const Contact = () => {
   const formRef = useRef()
@@ -22,38 +23,38 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    setLoading(true)
+    // setLoading(true)
 
-    emailjs
-      .send(
-        'service_qd8fedt', // service
-        'template_nf3wcpf', // template
-        {
-          from_name: form.name,
-          to_name: 'Antonio',
-          from_email: form.email,
-          to_email: 'love233031@gmail.com',
-          message: form.message,
-        },
-        'XIqTHuhpq3dXJkRhj' // pub key
-      )
-      .then(
-        () => {
-          setLoading(false)
-          alert('Thank you. I will get back to you as soon as possible.')
+    // emailjs
+    //   .send(
+    //     'service_qd8fedt', // service
+    //     'template_nf3wcpf', // template
+    //     {
+    //       from_name: form.name,
+    //       to_name: 'Antonio',
+    //       from_email: form.email,
+    //       to_email: 'love233031@gmail.com',
+    //       message: form.message,
+    //     },
+    //     'XIqTHuhpq3dXJkRhj' // pub key
+    //   )
+    //   .then(
+    //     () => {
+    //       setLoading(false)
+    //       alert('Thank you. I will get back to you as soon as possible.')
 
-          setForm({
-            name: '',
-            email: '',
-            message: '',
-          })
-        },
-        (error) => {
-          setLoading(false)
-          console.log(error)
-          alert('Something went wrong.')
-        }
-      )
+    //       setForm({
+    //         name: '',
+    //         email: '',
+    //         message: '',
+    //       })
+    //     },
+    //     (error) => {
+    //       setLoading(false)
+    //       console.log(error)
+    //       alert('Something went wrong.')
+    //     }
+    //   )
   }
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
@@ -101,13 +102,22 @@ const Contact = () => {
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
-
           <button
             type="submit"
-            className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
+            className="bg-yellow-600 py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
+            onClick={() => {
+              toast.success(
+                'I have already received your reply and will get back to you ASAP!',
+                {
+                  icon: '👏',
+                  duration: '500',
+                }
+              )
+            }}
           >
             {loading ? 'Sending...' : 'Send'}
           </button>
+          <Toaster position="bottom-right" reverseOrder={false} />
         </form>
       </motion.div>
 

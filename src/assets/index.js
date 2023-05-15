@@ -9,6 +9,7 @@ import close from './close.svg'
 import books from './books.png'
 import short from './short.png'
 import dataStructure from './dataStructure.png'
+import website from './website.jpg'
 
 import css from './tech/css.png'
 import docker from './tech/docker.png'
@@ -39,6 +40,7 @@ import tripguide from './tripguide.png'
 
 import hcw from './hcw.svg'
 export {
+  website,
   army6,
   coreslink,
   ndu,
