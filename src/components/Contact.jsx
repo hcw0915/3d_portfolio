@@ -23,38 +23,38 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    // setLoading(true)
+    setLoading(true)
 
-    // emailjs
-    //   .send(
-    //     'service_qd8fedt', // service
-    //     'template_nf3wcpf', // template
-    //     {
-    //       from_name: form.name,
-    //       to_name: 'Antonio',
-    //       from_email: form.email,
-    //       to_email: 'love233031@gmail.com',
-    //       message: form.message,
-    //     },
-    //     'XIqTHuhpq3dXJkRhj' // pub key
-    //   )
-    //   .then(
-    //     () => {
-    //       setLoading(false)
-    //       alert('Thank you. I will get back to you as soon as possible.')
+    emailjs
+      .send(
+        'service_qd8fedt', // service
+        'template_nf3wcpf', // template
+        {
+          from_name: form.name,
+          to_name: 'Antonio',
+          from_email: form.email,
+          to_email: 'love233031@gmail.com',
+          message: form.message,
+        },
+        'XIqTHuhpq3dXJkRhj' // pub key
+      )
+      .then(
+        () => {
+          setLoading(false)
+          alert('Thank you. I will get back to you as soon as possible.')
 
-    //       setForm({
-    //         name: '',
-    //         email: '',
-    //         message: '',
-    //       })
-    //     },
-    //     (error) => {
-    //       setLoading(false)
-    //       console.log(error)
-    //       alert('Something went wrong.')
-    //     }
-    //   )
+          setForm({
+            name: '',
+            email: '',
+            message: '',
+          })
+        },
+        (error) => {
+          setLoading(false)
+          console.log(error)
+          alert('Something went wrong.')
+        }
+      )
   }
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
