@@ -21,8 +21,10 @@ export function Wei(props) {
       {...props}
       ref={ref}
       dispose={null}
-      scale={props.isMobile ? 2 : 2.7}
-      position={props.isMobile ? [0, -3.1, 0] : [1.8, -3.25, -3]}
+      // scale={props.isMobile ? 2 : 2.7}
+      scale={props.isMobile ?  : 7}
+      // position={props.isMobile ? [0, -3.1, 0] : [1.8, -3.25, -3]}
+      position={props.isMobile ? [0, -3.1, 0] : [5, -10, -3]}
       rotation={[0, Math.PI / 3, 0]}
     >
       <primitive object={nodes.Hips} />

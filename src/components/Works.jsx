@@ -94,8 +94,8 @@ const Works = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>My work</p>
-        <h2 className={styles.heroHeadText}>Projects.</h2>
+        <p className={styles.sectionSubText}>成果展示</p>
+        <h2 className={styles.heroHeadText}>專案介紹</h2>
       </motion.div>
 
       <div className="w-full flex">
@@ -103,12 +103,8 @@ const Works = () => {
           variants={fadeIn('', '', 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, quos
-          numquam quia est id, odit vitae quasi ducimus sunt harum soluta cumque
-          accusantium voluptas rerum neque aliquid! Ipsa iusto magni pariatur
-          officia! Error aspernatur quia libero in, debitis ratione blanditiis
-          animi quos! Facere vel explicabo soluta modi, rem reiciendis
-          consequatur!
+          近期作品配合 Three.js 製作專案，同時個人信任 "Practice makes
+          Perfect"，沒有甚麼套件或是API是不會的，如果有，那就再多練一遍。
         </motion.p>
       </div>
 

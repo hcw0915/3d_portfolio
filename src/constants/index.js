@@ -12,9 +12,6 @@ import {
   tailwind,
   git,
   figma,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
   bootstrap5,
   styledComponents,
@@ -27,6 +24,9 @@ import {
   army6,
   ndu,
   coreslink,
+  portfolio,
+  blog,
+  car,
 } from '../assets'
 
 export const navLinks = [
@@ -229,14 +229,14 @@ const projects = [
         color: 'orange-text-gradient',
       },
     ],
-    image: carrent,
+    image: portfolio,
     website_link: 'https://3d-portfolio-lake.vercel.app/',
-    source_code_link: 'https://github.com/',
+    source_code_link: 'https://github.com/hcw0915/3d_portfolio',
   },
   {
-    name: 'HCW | 部落格',
+    name: 'HCW | 技術筆記',
     description:
-      '以 Docusaurus 為主要框架的筆記網站，主要記述了過去個人筆記檔案，以及套件學習進度，持續保持個人筆記學習習慣，與瀏覽者彼此教學相長。',
+      '以 Docusaurus 為主要框架的筆記網站，主要記述了個人筆記檔案，以及套件學習進度，持續保持個人筆記習慣，與瀏覽者彼此教學相長，後續將會隨著文章增加，再繼續進行優化(如:algolia)。',
     // 'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
     tags: [
       {
@@ -252,22 +252,22 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: jobit,
+    image: blog,
     website_link: 'https://hcwblog.vercel.app/',
-    source_code_link: 'https://github.com/',
+    source_code_link: '#',
   },
   {
     name: '3D 跑車',
     description:
-      '第一個復刻網路YT 3D作品內容，本專案除了學習 Three.js 基礎API以外，尚針對WebGL知識有基礎認識，像是 .glb .gtlf 等等模型檔案，以及對 3D模型軟體有基礎認識。',
+      '第一個復刻網路YT 3D作品內容，本專案除了學習 Three.js 基礎API以外，尚針對WebGL知識有基礎認識，像是 .glb .gtlf 等等模型檔案，以及對 3D模型軟體有基礎認識，同時也使用react-three 提供的不同API來完成這個作品。',
     // 'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
     tags: [
       {
-        name: 'nextjs',
+        name: 'React',
         color: 'blue-text-gradient',
       },
       {
-        name: 'supabase',
+        name: 'Three.js',
         color: 'green-text-gradient',
       },
       {
@@ -275,9 +275,9 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: tripguide,
+    image: car,
     website_link: 'https://car-react-three.vercel.app/',
-    source_code_link: 'https://github.com/',
+    source_code_link: 'https://github.com/hcw0915/Car-React-Three',
   },
 ]
 

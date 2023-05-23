@@ -62,8 +62,8 @@ const Contact = () => {
         variants={slideIn(slideIn('left', 'tween', 0.2, 1))}
         className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
       >
-        <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.heroHeadText}>Contact.</h3>
+        <p className={styles.sectionSubText}>可以聯絡看看.</p>
+        <h3 className={styles.heroHeadText}>找我找我.</h3>
         <form
           ref={formRef}
           onSubmit={handleSubmit}

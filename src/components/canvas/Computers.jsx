@@ -15,7 +15,6 @@ const Computers = ({ isMobile }) => {
   useFrame((state, delta) => {
     ref.current.rotation.y -= delta / 15
   })
-  console.log('ref', ref)
 
   return (
     <mesh ref={ref}>

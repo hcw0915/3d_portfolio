@@ -34,12 +34,15 @@ import ndu from './company/ndu.png'
 import coreslink from './company/coreslink.jpg'
 import army6 from './company/army6.png'
 
-import carrent from './carrent.png'
-import jobit from './jobit.png'
-import tripguide from './tripguide.png'
+import portfolio from './portfolio.jpg'
+import blog from './blog.jpg'
+import car from './car.jpg'
 
 import hcw from './hcw.svg'
 export {
+  car,
+  blog,
+  portfolio,
   website,
   army6,
   coreslink,
@@ -74,7 +77,4 @@ export {
   tailwind,
   typescript,
   threejs,
-  carrent,
-  jobit,
-  tripguide,
 }

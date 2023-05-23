@@ -3,6 +3,15 @@ import { motion } from 'framer-motion'
 import { styles } from '../styles'
 import { ComputersCanvas } from './canvas'
 import { useTranslation } from 'react-i18next'
+import {
+  reactjs,
+  javascript,
+  html,
+  css,
+  tailwind,
+  scss,
+  threejs,
+} from '../assets/index'
 import i18n from '../i18n'
 
 const Hero = () => {
@@ -26,22 +35,34 @@ const Hero = () => {
 
           <div>
             <h1 className={`${styles.heroHeadText}`}>
-              <span className="text-[#915eff]">
+              <span className="text-yellow-400">
                 {t('Front-End React')}. &nbsp;
                 <hr />
               </span>
             </h1>
             <br />
             <p className={`${styles.heroSubText}  text-white`}>
-              {t(
+              {/* {t(
                 'Hi, I am a Antonio Hou, A Front-end React Developer based in Taiwan.'
-              )}
+              )} */}
+              你好，我是侯承緯(Antonio Hou), 一個有明確目標的前端工程師.
             </p>
             <br />
             <br />
             <br />
-            <div className={`${styles.heroSubText}  text-white`}>Skills</div>
-            <div>React</div>
+            <div className={`${styles.heroSubText}  text-white`}>TECH |</div>
+
+            <div className="flex flex-row flex-wrap">
+              <img src={html} className="w-10 h-10 m-1 " />
+              <img src={css} className="w-10 h-10 m-1" />
+              <img src={javascript} className="w-10 h-10 m-1" />
+              <img src={reactjs} className="w-10 h-10 m-1" />
+              <img src={threejs} className="w-10 h-10 bg-white rounded m-1" />
+              <img src={tailwind} className="w-10 h-10 m-1" />
+              <img src={scss} className="w-10 h-10 m-1" />
+
+              {/* <img src="../assets/tech/tailwind.png" alt="" /> */}
+            </div>
           </div>
         </div>
         <ComputersCanvas />
